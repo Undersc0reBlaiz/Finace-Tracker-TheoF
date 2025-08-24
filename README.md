@@ -21,6 +21,7 @@ personal-finance-tracker/
 
 ## Example Output
 When you run the code currently this is the output:
+
 Date         | Amount  |  Category  | Description
 ---------------------------------------------
 2025-08-24   |    25   |    Food    |       Lunch
