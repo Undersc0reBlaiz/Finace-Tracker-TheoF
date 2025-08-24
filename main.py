@@ -1,5 +1,6 @@
  # main.py
 import datetime
+import csv
 
 #Full transactions list
 TransactionsList = []
@@ -23,9 +24,38 @@ def read_transaction_list():
     for t in TransactionsList:
         print(f"{t['date']:<13}|{t['amount']:^9}|{t['category']:^12}|{t['description']:>12}")
 
+def save_transactions():
+    with open("TransactionsList.csv", mode="w", newline="") as file:
+        cols = ["date", "amount", "category", "description"]
+        writer = csv.DictWriter(file, fieldnames=cols)
+        writer.writeheader()
+        writer.writerows(TransactionsList)
+
+def load_transactions():
+    try:
+        with open("TransactionsList.csv", mode="r") as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                row["amount"] = float(row["amount"])
+                TransactionsList.append(row)
+    except FileNotFoundError:
+        pass
+
+def clear_history():
+    global TransactionsList
+    TransactionsList = []
+    with open("TransactionsList.csv", mode="w", newline="") as file:
+        cols = ["date", "amount", "category", "description"]
+        writer = csv.DictWriter(file, fieldnames=cols)
+        writer.writeheader()
+
 
 # Example usage
+load_transactions()
+read_transaction_list()
 add_transaction(25, "Food", "Lunch")
 add_transaction(100, "Salary", "Weekly pay")
-
+save_transactions()
+add_transaction(60, "Lifestyle", "Salon")
 read_transaction_list()
+clear_history()
