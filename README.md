@@ -20,7 +20,7 @@ Last update: 25/08/25
   - Clear Transaction history on command
 
 ## Project Structure
-personal-finance-tracker/
+Finance-Tracker-TheoF/
 - main.py # Core program
 - README.md # Documentation (this file)
 - TransactionsList.csv # csv file of stored data
