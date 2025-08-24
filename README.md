@@ -16,8 +16,8 @@ The project is currently coded completely in Python and requires Python 3.8 or l
 
 ## Project Structure
 personal-finance-tracker/
-─ main.py # Core program
-─ README.md # Documentation (this file)
+- main.py # Core program
+- README.md # Documentation (this file)
 
 ## Next Steps
 - Saving Transactions to csv file
