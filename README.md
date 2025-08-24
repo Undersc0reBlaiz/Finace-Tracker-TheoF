@@ -19,14 +19,6 @@ personal-finance-tracker/
 ─ main.py # Core program
 ─ README.md # Documentation (this file)
 
-## Example Output
-When you run the code currently this is the output:
-
-Date         | Amount  |  Category  | Description
----------------------------------------------
-2025-08-24   |    25   |    Food    |       Lunch
-2025-08-24   |   100   |   Salary   |   Weekly pay
-
 ## Next Steps
 - Saving Transactions to csv file
 - Load past transactions on program start
