@@ -16,8 +16,13 @@ Last update: 25/08/25
 - Display all recorded transactions in a table format.
 - Accesses csv file to:
   - Save Transactions to csv file
-  - Load Transactions on command
+  - Load Transactions on start and on command
   - Clear Transaction history on command
+ - User input allows for:
+  - Adding transactions
+  - Viewing transactions
+  - Clearing history
+  - Exiting program
 
 ## Project Structure
 Finance-Tracker-TheoF/
@@ -26,7 +31,6 @@ Finance-Tracker-TheoF/
 - TransactionsList.csv # csv file of stored data
 
 ## Next Steps
-- Load past transactions on program start
 - Add summaries (totals, per month, categories...)
 - Improve input options
 - Add charts via Matplotlib
