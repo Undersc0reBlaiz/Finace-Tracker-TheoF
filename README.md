@@ -19,10 +19,10 @@ Last update: 25/08/25
   - Load Transactions on start and on command
   - Clear Transaction history on command
  - User input allows for:
-  - Adding transactions
-  - Viewing transactions
-  - Clearing history
-  - Exiting program
+    - Adding transactions
+    - Viewing transactions
+    - Clearing history
+    - Exiting program
 
 ## Project Structure
 Finance-Tracker-TheoF/
